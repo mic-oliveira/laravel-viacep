@@ -1,0 +1,36 @@
+{
+	"name": "dominusdev/laravel-viacep",
+	"description": "Laravel via cep wrapper",
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"DominusDev\\LaravelViacep\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"DominusDev\\LaravelViacep\\Tests\\": "tests/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Michael de Oliveira Ferreira",
+			"email": "oliveiramichael@outlook.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"php": "^8.2"
+	},
+	"require-dev": {
+		"orchestra/testbench": "10.x-dev",
+		"phpunit/phpunit": "^11.1"
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"DominusDev\\LaravelViacep\\Providers\\ViacepProvider"
+			]
+		}
+	}
+}
